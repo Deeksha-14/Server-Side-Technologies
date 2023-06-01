@@ -6,7 +6,7 @@ function f2(){
 console.log("world");
 }
 
-user = {uid:10, uname:"hey re"}
+user = {uid:10, uname:"hey!!"}
 
 module.exports = {
     function1:f1,
