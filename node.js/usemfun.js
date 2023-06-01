@@ -1,46 +1,10 @@
-function add(n1, n2)
-{
-    return n1+n2;
-}
-
-function sub(a,b)
-{
-    return a+b;
-}
-
-function mul(a,b)
-{
-    return a*b;
-}
-
-function div(a,b)
-{
-    if(a<b)
-    {
-        console.log("a can not be smaller than b")
-    }else if(b=0)
-    {
-        console.log("b can not be zero")
-    }else 
-    {var c= a/b;
-    return c;
-    }
-}
-function sq(a)
-{
-    return a*a;
-}
-
-module.exports = {
-    a: add,
-    s: sub,
-    m: mul,
-    d: div,
-    squ: sq,
-
-}
+const m1 = require("./calc.js")
+console.log(m1.a(10,20))
+console.log(m1.s(20,10))
+console.log(m1.m(35,10))
+console.log(m1.squ(5))
+console.log(m1.d(24,12))
 
 
-// Create a user defined local module calc.js that exposes the following functions: add(a,b),
-// subtract(a,b), multiply(a,b), divide(a,b), square(a), sum(a,b,c...)
-// Create a client application that invokes each of these methods
+
+
