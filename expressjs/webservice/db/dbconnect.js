@@ -7,8 +7,6 @@ const mysqlconnection = mysql.createConnection({
     "database" : "prac"
 
 
-
-
 })
 
 
@@ -19,8 +17,6 @@ console.log("error occured"+JSON.stringify(err));
 }else{
 console.log("connection established");
 }
-
-
 
 })
 
